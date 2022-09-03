@@ -8,7 +8,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 app.secret_key = "Secret Key"
 
-#SqlAlchemy Database Configuration With Mysql
+#SqlAlchemy Database Configuration With SQLite
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Employeeinfo.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
