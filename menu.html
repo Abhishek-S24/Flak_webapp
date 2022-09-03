@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+
+
+{% block title %} Home {% endblock %}
+
+
+
+{% block body %}
+<div class="form" action=""  method="POST">
+    <a href="/index" class="btn btn-success float-center">Go to Home</a>
+    <a href="/index" class="btn btn-success float-right">Full Employee Details</a><br><br><br><br>
+    <form action="{{url_for('search')}}" method="GET">
+        <p>
+            <label For="Search">Search by Email ID</label>
+            <input type="email" name="search"  required>
+        </p>
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+</div>
+{% endblock %}    
